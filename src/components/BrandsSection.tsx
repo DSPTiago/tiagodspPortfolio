@@ -1,11 +1,11 @@
 const WaternetLogo = '/tiagodspPortfolio/assets/WaternetLogo.png';
 const OneUpStudiosLogo = '/tiagodspPortfolio/assets/1upstudios_logo.jpeg';
-const SaxoLogo = '/tiagodspPortfolio/assets/SaxoLogo.webp';
+const SaxoLogo = '/tiagodspPortfolio/assets/SaxoLogo.png';
 const NetcompanyLogo = '/tiagodspPortfolio/assets/NetcompanyLogo.png';
 const LiptonLogo = '/tiagodspPortfolio/assets/LiptonLogo.png';
-const VfpfLogo = '/tiagodspPortfolio/assets/VfPfLogo.jpg';
+const VfpfLogo = '/tiagodspPortfolio/assets/VfPfLogo.jpeg';
 const RitualsLogo = '/tiagodspPortfolio/assets/RitualsLogo.png';
-const BMLogo = '/tiagodspPortfolio/assets/britishmuseumLogo.webp';
+const BMLogo = '/tiagodspPortfolio/assets/britishmuseumLogo.png';
 
 
 export function BrandsSection() {
@@ -34,7 +34,7 @@ export function BrandsSection() {
               rel="noopener noreferrer"
               className="flex items-center justify-center p-8 bg-background rounded-lg hover:shadow-lg transition-shadow duration-300"
             >
-            <img src={brand.logo} alt={`${brand.name} logo`} className="max-h-16 object-contain" />
+            <img src={brand.logo} alt={`${brand.name} logo`} className="w-[200px] h-[200px] object-contain" />
             </a>
           ))}
         </div>
