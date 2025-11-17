@@ -1,7 +1,7 @@
 import { Button } from './ui/button';
 import { ExternalLink } from 'lucide-react';
 const WaternetImage = '/tiagodspPortfolio/assets/WaternetImage.png';
-const SaxoBankImage = '/tiagodspPortfolio/assets/SaxoBankImage.png';
+const SaxoBankImage = '/tiagodspPortfolio/assets/SaxoBankImage.jpg';
 const BritishMuseumImage = '/tiagodspPortfolio/assets/britishmuseum2.webp';
 
 
