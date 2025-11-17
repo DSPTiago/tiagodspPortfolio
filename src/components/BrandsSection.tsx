@@ -1,14 +1,23 @@
+import WaternetLogo from '../assets/WaternetLogo.png';
+import OneUpStudiosLogo from '../assets/1upstudios_logo.jpeg';
+import SaxoLogo from '../assets/SaxoLogo.webp';
+import NetCompanyLogo from '../assets/NetcompanyLogo.png';
+import LiptonLogo from '../assets/LiptonLogo.png';
+import VfpfLogo from '../assets/VfPfLogo.jpg';
+import RitualsLogo from '../assets/RitualsLogo.png';
+import BMLogo from '../assets/britishmuseumLogo.webp';
+
 
 export function BrandsSection() {
   const brands = [
-    { name: 'Waternet', logo: '../assets/WaternetLogo.png', url: 'https://www.waternet.nl' },
-    { name: '1Up Studios', logo: '../assets/1upstudios_logo.jpeg', url: 'https://www.1upstudios.tech' },
-    { name: 'Saxo Bank', logo: '../assets/SaxoLogo.webp', url: 'https://www.home.saxo' },
-    { name: 'Netcompany', logo: '../assets/NetcompanyLogo.png', url: 'https://netcompany.com' },
-    { name: 'Lipton', logo: '../assets/LiptonLogo.png', url: 'https://www.liptonicetea.nl/home.html' },
-    { name: 'VFPF', logo: '../assets/VfPfLogo.jpg', url: 'https://www.vfpf.nl' },
-    { name: 'Rituals', logo: '../assets/RitualsLogo.png', url: 'https://www.rituals.com/en-us/home' },
-    { name: 'British Museum', logo: '../assets/britishmuseumLogo.webp', url: 'https://www.britishmuseum.org' },
+    { name: 'Waternet', logo: WaternetLogo, url: 'https://www.waternet.nl' },
+    { name: '1Up Studios', logo: OneUpStudiosLogo, url: 'https://www.1upstudios.tech' },
+    { name: 'Saxo Bank', logo: SaxoLogo, url: 'https://www.home.saxo' },
+    { name: 'Netcompany', logo: NetcompanyLogo, url: 'https://netcompany.com' },
+    { name: 'Lipton', logo: LiptonLogo, url: 'https://www.liptonicetea.nl/home.html' },
+    { name: 'VFPF', logo: VfpfLogo, url: 'https://www.vfpf.nl' },
+    { name: 'Rituals', logo: RitualsLogo, url: 'https://www.rituals.com/en-us/home' },
+    { name: 'British Museum', logo: BMLogo, url: 'https://www.britishmuseum.org' },
   ];
 
   return (

@@ -1,5 +1,9 @@
 import { Button } from './ui/button';
 import { ExternalLink } from 'lucide-react';
+import WaternetImage from '../assets/WaternetImage.png';
+import SaxoBankImage from '../assets/SaxoBankImage.png';
+import BritischMuseumImage from '../assets/britishmuseum2.webp';
+
 
 interface WorkLink {
   label: string;
@@ -20,7 +24,7 @@ const works: Work[] = [
     id: 1,
     title: 'Digital Transformation for Public services',
     summary: 'Leading the modernization of Waternet’s digital ecosystem through a unified design system, accessible service flows, and improved information architecture.',
-    image: '../assets/WaternetImage.png', // Add your image URL here
+    image: WaternetImage, // Add your image URL here
     links: [
         { label: 'View AWD website', url: 'https://awd.waternet.nl' },
         { label: 'Read more about Waternet', url: 'https://www.waternet.nl' }
@@ -30,7 +34,7 @@ const works: Work[] = [
     id: 2,
     title: 'Redesigning Compliance Workflows',
     summary: 'Redesigning complex compliance and due-diligence tools to streamline multi-step workflows and reduce cognitive load. ',
-    image: '../assets/SaxoBankImage.png', // Add your image URL here
+    image: SaxoBankImage, // Add your image URL here
     links: [
         { label: 'Preview Saxo Investor App', url: 'https://www.home.saxo/platforms/saxoinvestor' }
     ],
@@ -39,7 +43,7 @@ const works: Work[] = [
     id: 3,
     title: 'Designing for Immersive Brand Experiences',
     summary: 'Creating engaging AR-driven and digital brand experiences for global clients. The work combined UX principles, narrative interaction, and rapid prototyping to deliver high-impact campaign microsites and interactive moments for audiences worldwide.',
-    image: '../assets/britishmuseum2.webp', // Add your image URL here
+    image: BritischMuseumImage, // Add your image URL here
     links: [
         { label: 'Explore at the British Museum', url: 'https://www.timeodyssey.org' },
         { label: 'Experience Echo Salford', url: 'https://echosalford.co.uk' }
