@@ -1,8 +1,8 @@
 import { Button } from './ui/button';
 import { ExternalLink } from 'lucide-react';
-import WaternetImage from '../assets/WaternetImage.png';
-import SaxoBankImage from '../assets/SaxoBankImage.png';
-import BritischMuseumImage from '../assets/britishmuseum2.webp';
+const WaternetImage = '/assets/WaternetImage.png';
+const SaxoBankImage = '/assets/SaxoBankImage.png';
+const BritishMuseumImage = '/assets/britishmuseum2.webp';
 
 
 interface WorkLink {
@@ -43,7 +43,7 @@ const works: Work[] = [
     id: 3,
     title: 'Designing for Immersive Brand Experiences',
     summary: 'Creating engaging AR-driven and digital brand experiences for global clients. The work combined UX principles, narrative interaction, and rapid prototyping to deliver high-impact campaign microsites and interactive moments for audiences worldwide.',
-    image: BritischMuseumImage, // Add your image URL here
+    image: BritishMuseumImage, // Add your image URL here
     links: [
         { label: 'Explore at the British Museum', url: 'https://www.timeodyssey.org' },
         { label: 'Experience Echo Salford', url: 'https://echosalford.co.uk' }

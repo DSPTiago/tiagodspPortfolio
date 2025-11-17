@@ -1,11 +1,11 @@
-import WaternetLogo from '../assets/WaternetLogo.png';
-import OneUpStudiosLogo from '../assets/1upstudios_logo.jpeg';
-import SaxoLogo from '../assets/SaxoLogo.webp';
-import NetcompanyLogo from '../assets/NetcompanyLogo.png';
-import LiptonLogo from '../assets/LiptonLogo.png';
-import VfpfLogo from '../assets/VfPfLogo.jpg';
-import RitualsLogo from '../assets/RitualsLogo.png';
-import BMLogo from '../assets/britishmuseumLogo.webp';
+const WaternetLogo = '/assets/WaternetLogo.png';
+const OneUpStudiosLogo = '/assets/1upstudios_logo.jpeg';
+const SaxoLogo = '/assets/SaxoLogo.webp';
+const NetcompanyLogo = '/assets/NetcompanyLogo.png';
+const LiptonLogo = '/assets/LiptonLogo.png';
+const VfpfLogo = '/assets/VfPfLogo.jpg';
+const RitualsLogo = '/assets/RitualsLogo.png';
+const BMLogo = '/assets/britishmuseumLogo.webp';
 
 
 export function BrandsSection() {
