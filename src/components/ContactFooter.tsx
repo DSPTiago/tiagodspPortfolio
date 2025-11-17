@@ -62,7 +62,7 @@ export function ContactFooter() {
         {/* Footer Bottom */}
         <div className="pt-8 border-t border-primary-foreground/20">
           <p className="text-sm opacity-70">
-            © {new Date().getFullYear()} Creative Designer. All rights reserved.
+            © {new Date().getFullYear()} B.Tropical. All rights reserved.
           </p>
         </div>
       </div>
