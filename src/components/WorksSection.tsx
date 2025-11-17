@@ -1,8 +1,8 @@
 import { Button } from './ui/button';
 import { ExternalLink } from 'lucide-react';
-const WaternetImage = '/assets/WaternetImage.png';
-const SaxoBankImage = '/assets/SaxoBankImage.png';
-const BritishMuseumImage = '/assets/britishmuseum2.webp';
+const WaternetImage = '/tiagodspPortfolio/assets/WaternetImage.png';
+const SaxoBankImage = '/tiagodspPortfolio/assets/SaxoBankImage.png';
+const BritishMuseumImage = '/tiagodspPortfolio/assets/britishmuseum2.webp';
 
 
 interface WorkLink {
