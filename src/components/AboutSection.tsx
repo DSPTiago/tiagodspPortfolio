@@ -4,7 +4,7 @@ export function AboutSection() {
   const education = [
      {
       degree: 'Traineeship Information Analyst',
-      school: 'YoungCapital Professionals,
+      school: 'YoungCapital Professionals',
       year: '2020',
     },
     {
