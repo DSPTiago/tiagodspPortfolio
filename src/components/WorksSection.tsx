@@ -20,7 +20,7 @@ const works: Work[] = [
     id: 1,
     title: 'Digital Transformation for Public services',
     summary: 'Leading the modernization of Waternet’s digital ecosystem through a unified design system, accessible service flows, and improved information architecture.',
-    image: '../src/assets/WaternetImage.png', // Add your image URL here
+    image: '/src/assets/WaternetImage.png', // Add your image URL here
     links: [
         { label: 'View AWD website', url: 'https://awd.waternet.nl' },
         { label: 'Read more about Waternet', url: 'https://www.waternet.nl' }
@@ -30,7 +30,7 @@ const works: Work[] = [
     id: 2,
     title: 'Redesigning Compliance Workflows',
     summary: 'Redesigning complex compliance and due-diligence tools to streamline multi-step workflows and reduce cognitive load. ',
-    image: '../src/assets/SaxoBankImage.png', // Add your image URL here
+    image: '/src/assets/SaxoBankImage.png', // Add your image URL here
     links: [
         { label: 'Preview Saxo Investor App', url: 'https://www.home.saxo/platforms/saxoinvestor' }
     ],
@@ -39,7 +39,7 @@ const works: Work[] = [
     id: 3,
     title: 'Designing for Immersive Brand Experiences',
     summary: 'Creating engaging AR-driven and digital brand experiences for global clients. The work combined UX principles, narrative interaction, and rapid prototyping to deliver high-impact campaign microsites and interactive moments for audiences worldwide.',
-    image: '../src/assets/britishmuseum2.webp', // Add your image URL here
+    image: '/src/assets/britishmuseum2.webp', // Add your image URL here
     links: [
         { label: 'Explore at the British Museum', url: 'https://www.timeodyssey.org' },
         { label: 'Experience Echo Salford', url: 'https://echosalford.co.uk' }
