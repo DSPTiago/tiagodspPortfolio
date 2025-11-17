@@ -16,11 +16,11 @@ export function ContactFooter() {
         {/* Email */}
         <div className="mb-8">
           <a
-            href="mailto:hello@example.com"
+            href="mailto:dsptiago95@gmail.com"
             className="inline-flex items-center gap-2 text-xl hover:opacity-80 transition-opacity"
           >
             <Mail className="h-5 w-5" />
-            hello@example.com
+            dsptiago95@gmail.com
           </a>
         </div>
 
@@ -32,7 +32,7 @@ export function ContactFooter() {
             asChild
           >
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://linkedin.com/in/dsptiago"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
@@ -48,7 +48,7 @@ export function ContactFooter() {
             asChild
           >
             <a
-              href="https://dribbble.com/yourprofile"
+              href="https://dribbble.com/DSPTiago"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
