@@ -34,7 +34,7 @@ export function BrandsSection() {
               rel="noopener noreferrer"
               className="flex items-center justify-center p-8 bg-background rounded-lg hover:shadow-lg transition-shadow duration-300"
             >
-            <img src={brand.logo} alt={`${brand.name} logo`} className="w-[200px] h-[200px] object-contain" />
+            <img src={brand.logo} alt={`${brand.name} logo`} className="w-[100px] h-[100px] object-contain" />
             </a>
           ))}
         </div>
