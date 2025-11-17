@@ -1,11 +1,11 @@
-const WaternetLogo = '/tiagodspPortfolio/assets/WaternetLogo.png';
-const OneUpStudiosLogo = '/tiagodspPortfolio/assets/1upstudios_logo.jpeg';
-const SaxoLogo = '/tiagodspPortfolio/assets/SaxoLogo.png';
-const NetcompanyLogo = '/tiagodspPortfolio/assets/NetcompanyLogo.png';
-const LiptonLogo = '/tiagodspPortfolio/assets/LiptonLogo.png';
-const VfpfLogo = '/tiagodspPortfolio/assets/VfPfLogo.jpeg';
-const RitualsLogo = '/tiagodspPortfolio/assets/RitualsLogo.png';
-const BMLogo = '/tiagodspPortfolio/assets/britishmuseumLogo.png';
+const WaternetLogo = '/assets/WaternetLogo.png';
+const OneUpStudiosLogo = '/assets/1upstudios_logo.jpeg';
+const SaxoLogo = '/assets/SaxoLogo.png';
+const NetcompanyLogo = '/assets/NetcompanyLogo.png';
+const LiptonLogo = '/assets/LiptonLogo.png';
+const VfpfLogo = '/assets/VfPfLogo.jpeg';
+const RitualsLogo = '/assets/RitualsLogo.png';
+const BMLogo = '/assets/britishmuseumLogo.png';
 
 
 export function BrandsSection() {
