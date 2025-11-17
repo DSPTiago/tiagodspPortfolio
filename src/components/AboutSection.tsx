@@ -2,47 +2,55 @@ import { GraduationCap, Briefcase, Wrench } from 'lucide-react';
 
 export function AboutSection() {
   const education = [
-    {
-      degree: 'Bachelor of Fine Arts in Graphic Design',
-      school: 'Design University',
-      year: '2018 - 2022',
+     {
+      degree: 'Traineeship Information Analyst',
+      school: 'YoungCapital Professionals,
+      year: '2020',
     },
     {
-      degree: 'UX/UI Design Certification',
-      school: 'Digital Design Institute',
-      year: '2023',
+      degree: 'Bachelor of Interaction Design',
+      school: 'Utrecht School of the Arts (HKU)',
+      year: '2014 - 2018',
+    },
+    {
+      degree: 'Bachelor of Computer Science',
+      school: 'University of Amsterdam (UVA)',
+      year: '2013 - 2014',
     },
   ];
 
   const experiences = [
     {
-      role: 'Senior Product Designer',
-      company: 'Creative Studio Inc.',
-      period: '2023 - Present',
+      role: 'Senior UX Designer & Information Analyst',
+      company: 'Waternet',
+      period: '2024 - Present',
     },
     {
-      role: 'UI/UX Designer',
-      company: 'Digital Agency Co.',
+      role: 'Senior UX Designer',
+      company: '1Up Studios (Arcade XR)',
+      period: '2023 - 2024',
+    },
+    {
+      role: 'UX Designer',
+      company: 'Saxo Bank',
       period: '2022 - 2023',
     },
     {
-      role: 'Junior Designer',
-      company: 'Startup Labs',
-      period: '2021 - 2022',
+      role: 'UX Designer & Information Analyst',
+      company: 'Netcompany',
+      period: '2020 - 2022',
     },
   ];
 
   const skills = [
-    'Figma',
-    'Adobe Creative Suite',
-    'Sketch',
-    'Prototyping',
-    'UI/UX Design',
-    'Brand Identity',
-    'Typography',
+    'UX/UI Design',
+    'Strategic Communication',
+    'Product Design',
+    'Creative vision',
+    'Project management',
     'Design Systems',
-    'Webflow',
-    'Framer',
+    'Prototyping',
+    'Accessibility',
   ];
 
   return (
@@ -51,9 +59,7 @@ export function AboutSection() {
       
       <div className="max-w-3xl mx-auto mb-16 text-center">
         <p className="text-lg text-[rgb(13,31,26)] leading-relaxed">
-          I'm a passionate creative designer with over 5 years of experience in crafting beautiful, 
-          user-centered digital experiences. My work focuses on creating meaningful connections between 
-          brands and their audiences through thoughtful design solutions that blend aesthetics with functionality.
+          Senior UX Designer with 7+ years of experience designing and optimising digital products for fintech, XR, and public sector clients. Proven ability to lead holistic user experiences strategies across B2B, Saas and CRM platforms with strong feature consistency. Skilled at shaping product strategy in complex, cross-functional environments and aligning design with business and leadership goals. Experienced in AR/AI-enhanced platforms and data-driven design. Passionate about inclusive and sustainable design that balances user needs with business goals.
         </p>
       </div>
 

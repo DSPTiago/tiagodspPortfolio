@@ -3,6 +3,7 @@ import { ExternalLink } from 'lucide-react';
 const WaternetImage = '/tiagodspPortfolio/assets/WaternetImage.png';
 const SaxoBankImage = '/tiagodspPortfolio/assets/SaxoBankImage.jpg';
 const BritishMuseumImage = '/tiagodspPortfolio/assets/britishmuseum2.webp';
+const VfpfImage = '/tiagodspPortfolio/assets/VfpfImage.png';
 
 
 interface WorkLink {
@@ -47,6 +48,16 @@ const works: Work[] = [
     links: [
         { label: 'Explore at the British Museum', url: 'https://www.timeodyssey.org' },
         { label: 'Experience Echo Salford', url: 'https://echosalford.co.uk' }
+        ],
+  },
+    {
+    id: 4,
+    title: 'Information Architecture for Clarity and Scalability',
+    summary: 'Improving the usability of VfPf’s information portal by restructuring the information architecture, simplifying content-heavy pages, and introducing scalable design templates.',
+    image: VfpfImage, // Add your image URL here
+    links: [
+        { label: 'Watch a sneak preview', url: 'https://www.youtube.com/watch?v=r8Z6Fcum_8w' },
+        { label: 'Read more about VfPf', url: 'https://www.vfpf.nl' }
         ],
   },
 ];
