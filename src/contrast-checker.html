@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCAG Contrast Checker</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .result {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .pass { background: #d4edda; }
+        .fail { background: #f8d7da; }
+        .preview {
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>WCAG 2.1 Color Contrast Checker</h1>
+    
+    <div id="results"></div>
+
+    <script>
+        function getLuminance(r, g, b) {
+            const [rs, gs, bs] = [r, g, b].map(c => {
+                c = c / 255;
+                return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+            });
+            return 0.2126 * rs + 0.7152 * gs + 0.0722 * bs;
+        }
+
+        function hexToRgb(hex) {
+            const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+            return result ? {
+                r: parseInt(result[1], 16),
+                g: parseInt(result[2], 16),
+                b: parseInt(result[3], 16)
+            } : null;
+        }
+
+        function getContrastRatio(color1, color2) {
+            const rgb1 = hexToRgb(color1);
+            const rgb2 = hexToRgb(color2);
+            
+            const lum1 = getLuminance(rgb1.r, rgb1.g, rgb1.b);
+            const lum2 = getLuminance(rgb2.r, rgb2.g, rgb2.b);
+            
+            const lighter = Math.max(lum1, lum2);
+            const darker = Math.min(lum1, lum2);
+            
+            return (lighter + 0.05) / (darker + 0.05);
+        }
+
+        function checkContrast(fg, bg, name) {
+            const ratio = getContrastRatio(fg, bg);
+            const passAA_normal = ratio >= 4.5;
+            const passAA_large = ratio >= 3.0;
+            const passAAA_normal = ratio >= 7.0;
+            const passAAA_large = ratio >= 4.5;
+
+            const resultDiv = document.createElement('div');
+            resultDiv.className = 'result ' + (passAA_normal ? 'pass' : 'fail');
+            
+            resultDiv.innerHTML = `
+                <h3>${name}</h3>
+                <div class="preview" style="background: ${bg}; color: ${fg};">
+                    Sample Text (Normal) | <strong>Sample Text (Large/Bold)</strong>
+                </div>
+                <p><strong>Foreground:</strong> ${fg} | <strong>Background:</strong> ${bg}</p>
+                <p><strong>Contrast Ratio:</strong> ${ratio.toFixed(2)}:1</p>
+                <p>
+                    <strong>WCAG AA:</strong> 
+                    Normal text ${passAA_normal ? '✓ PASS' : '✗ FAIL'} | 
+                    Large text ${passAA_large ? '✓ PASS' : '✗ FAIL'}
+                </p>
+                <p>
+                    <strong>WCAG AAA:</strong> 
+                    Normal text ${passAAA_normal ? '✓ PASS' : '✗ FAIL'} | 
+                    Large text ${passAAA_large ? '✓ PASS' : '✗ FAIL'}
+                </p>
+            `;
+            
+            document.getElementById('results').appendChild(resultDiv);
+        }
+
+        // Check all color combinations
+        checkContrast('#0D1F1A', '#F9F7F2', 'Main Text on Background');
+        checkContrast('#F9F7F2', '#2F6B4F', 'Primary Button (Text on Button)');
+        checkContrast('#2F6B4F', '#FFFFFF', 'Navigation Button (not scrolled)');
+        checkContrast('#C8D5CC', '#F9F7F2', 'Muted Text on Background');
+        checkContrast('#0D1F1A', '#E8EDE9', 'Text on Secondary Background');
+        checkContrast('#FFFFFF', '#000000', 'White Text on Dark Overlay (Hero)');
+    </script>
+</body>
+</html>
