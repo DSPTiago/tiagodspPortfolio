@@ -10,7 +10,7 @@ export default function App() {
     <div className="min-h-screen">
       <Navigation />
       {/* Add your own hero background image URL below */}
-      <HeroSection backgroundImage="/src/assets/hero_banner.jpeg" />
+      <HeroSection backgroundImage="/assets/hero_banner.jpeg" />
       <WorksSection />
       <BrandsSection />
       <AboutSection />

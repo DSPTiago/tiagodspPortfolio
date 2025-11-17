@@ -1,14 +1,14 @@
 
 export function BrandsSection() {
   const brands = [
-    { name: 'Waternet', logo: '/src/assets/WaternetLogo.png', url: 'https://www.waternet.nl' },
-    { name: '1Up Studios', logo: '/src/assets/1upstudios_logo.jpeg', url: 'https://www.1upstudios.tech' },
-    { name: 'Saxo Bank', logo: '/src/assets/SaxoLogo.webp', url: 'https://www.home.saxo' },
-    { name: 'Netcompany', logo: '/src/assets/NetcompanyLogo.png', url: 'https://netcompany.com' },
-    { name: 'Lipton', logo: '/src/assets/LiptonLogo.png', url: 'https://www.liptonicetea.nl/home.html' },
-    { name: 'VFPF', logo: '/src/assets/VfPfLogo.jpg', url: 'https://www.vfpf.nl' },
-    { name: 'Rituals', logo: '/src/assets/RitualsLogo.png', url: 'https://www.rituals.com/en-us/home' },
-    { name: 'British Museum', logo: '/src/assets/britishmuseumLogo.webp', url: 'https://www.britishmuseum.org' },
+    { name: 'Waternet', logo: '/assets/WaternetLogo.png', url: 'https://www.waternet.nl' },
+    { name: '1Up Studios', logo: '/assets/1upstudios_logo.jpeg', url: 'https://www.1upstudios.tech' },
+    { name: 'Saxo Bank', logo: '/assets/SaxoLogo.webp', url: 'https://www.home.saxo' },
+    { name: 'Netcompany', logo: '/assets/NetcompanyLogo.png', url: 'https://netcompany.com' },
+    { name: 'Lipton', logo: '/assets/LiptonLogo.png', url: 'https://www.liptonicetea.nl/home.html' },
+    { name: 'VFPF', logo: '/assets/VfPfLogo.jpg', url: 'https://www.vfpf.nl' },
+    { name: 'Rituals', logo: '/assets/RitualsLogo.png', url: 'https://www.rituals.com/en-us/home' },
+    { name: 'British Museum', logo: '/assets/britishmuseumLogo.webp', url: 'https://www.britishmuseum.org' },
   ];
 
   return (
