@@ -69,8 +69,8 @@ export function WorksSection() {
       
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {works.map((work) => (
-          <div key={work.id} className="group">
-            <div className="relative overflow-hidden rounded-lg mb-4 aspect-[4/3]">
+          <div key={work.id} className="group rounded-lg shadow-lg overflow-hidden bg-muted transition-shadow hover:shadow-xl">
+            <div className="relative overflow-hidden aspect-[4/3]">
               <img
                 src={work.image}
                 alt={work.title}
@@ -78,8 +78,8 @@ export function WorksSection() {
               />
             </div>
             
-            
-            <h3 className="text-2xl mb-3">{work.title}</h3>
+            <div className="p-6">
+            <h3 className="text-2xl font-semibold mb-3">{work.title}</h3>
             <p className="text-[rgb(13,31,26)] mb-4 leading-relaxed">{work.summary}</p>
             
             <div className="flex flex-wrap gap-3">
@@ -91,6 +91,7 @@ export function WorksSection() {
                   </a>
                 </Button>
               ))}
+            </div>
             </div>
           </div>
         ))}
