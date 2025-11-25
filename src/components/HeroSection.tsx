@@ -9,8 +9,7 @@ export function HeroSection({ backgroundImage }: HeroSectionProps) {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url(${backgroundImage})`,
-          opacity: scrollOpacity,
+          backgroundImage: `url(${backgroundImage})`
         }}
       />
       
