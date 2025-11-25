@@ -78,20 +78,20 @@ export function WorksSection() {
               />
             </div>
             
-            <div className="p-6">
-            <h3 className="text-2xl font-semibold mb-3">{work.title}</h3>
-            <p className="text-[rgb(13,31,26)] mb-4 leading-relaxed">{work.summary}</p>
+            <div className="p-6" style={{ padding: '24px' }}>
+                <h3 className="text-2xl font-semibold mb-3">{work.title}</h3>
+                <p className="text-[rgb(13,31,26)] mb-4 leading-relaxed">{work.summary}</p>
             
-            <div className="flex flex-wrap gap-3">
-              {work.links.map((link, index) => (
-                <Button key={index} variant="default" asChild className="group/btn">
-                  <a href={link.url} target="_blank" rel="noopener noreferrer">
-                    {link.label}
-                    <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-                  </a>
-                </Button>
-              ))}
-            </div>
+              <div className="flex flex-wrap gap-3">
+                {work.links.map((link, index) => (
+                    <Button key={index} variant="default" asChild className="group/btn">
+                        <a href={link.url} target="_blank" rel="noopener noreferrer">
+                         {link.label}
+                        <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+                        </a>
+                    </Button>
+                ))}
+               </div>
             </div>
           </div>
         ))}
