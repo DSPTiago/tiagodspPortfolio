@@ -1,29 +1,13 @@
-import { useEffect, useState } from 'react';
-
 interface HeroSectionProps {
   backgroundImage: string;
 }
 
 export function HeroSection({ backgroundImage }: HeroSectionProps) {
-  const [scrollOpacity, setScrollOpacity] = useState(1);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const maxScroll = 500; // Distance to fade completely
-      const opacity = Math.max(0, 1 - scrollPosition / maxScroll);
-      setScrollOpacity(opacity);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with fade effect */}
       <div
-        className="absolute inset-0 bg-cover bg-center transition-opacity duration-200"
+        className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           opacity: scrollOpacity,
@@ -31,8 +15,7 @@ export function HeroSection({ backgroundImage }: HeroSectionProps) {
       />
       
       {/* Overlay gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/40" 
-           style={{ opacity: scrollOpacity }} />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/40"/>
       
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4">
